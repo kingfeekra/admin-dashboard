@@ -62,7 +62,49 @@ table {
 
 .header {
     display: grid;
+    grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
+}
+
+.headerTop {
+    display: flex;
+    grid-area: 1/1/2/2;
+    margin: 20px;
+    align-items: center;
+}
+
+.headerTop input {
+    margin-right: auto;
+    width: 50%;
+    max-width: 500px;
+    background-color: aqua;
+    border: none;
+    border-radius: 20px;
+}
+
+.headerTop div {
+    margin-left: auto;
+}
+
+.headerBottom {
+    display: flex;
+    align-items: center;
+    grid-area: 2/1/3/2;
+    margin: 20px;
+}
+
+.buttonsDiv {
+    margin-left: auto;
+}
+
+button {
+    background-color: blue;
+    color: #FFFFFF;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 0px 10px;
+    width: 90px;
 }
 
 ul {
