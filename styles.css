@@ -55,6 +55,29 @@ table {
     background-color: aqua;
 }
 
+.sidebarContent {
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.header {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+ul {
+    margin-top: 50px;
+    font-size: 1.2rem;
+}
+
+li {
+    padding-bottom: 10px;
+}
+
+h1 {
+    font-size: 1.4rem;
+}
+
 .content {
     display: grid;
     grid-template-columns: 3fr 1fr;
@@ -81,5 +104,21 @@ table {
   }
 
   .contentRight {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 3fr 1fr 3fr 1fr;
+    grid-area: 1/2/4/3;
 
+  }
+
+  .announcementCard {
+    background-color: #FFFFFF;
+    color: black;
+    text-align: center;
+  }
+
+  .trendingCard {
+    background-color: #FFFFFF;
+    color: black;
+    text-align: center;
   }
